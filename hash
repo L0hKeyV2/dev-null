@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+
+# simple bash script to encode using Caeser cipher, hex and base64 
+echo "Secret is: "
+read secret
+echo "$secret" | tr 'A-Za-z' 'N-ZA-Mn-za-f' | xxd -p | base64
+
